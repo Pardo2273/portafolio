@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*declarando variables css*/
+:root{
+    --color-primario: #000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    /*height: 100vh;*//*viewport height = altura de la pantalla*/
+    box-sizing: border-box;/*para que no se salga del elemento padre*/
+}
+
+.header{
+    padding: 2% 0 0 15%;
+}
+
+.headerMenu{
+    display: flex;
+    gap: 80px;
+}
+
+.headerMenuLink{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem; /*16px = 1rem, 8px = 0.5rem*/
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;/*centra los elementos con el que tiene mayor proporcion*/
+    justify-content: space-between;
+    padding: 6.2% 15%;
+    gap: 82px;
+}
+
+.presentacionContenedor{
+    width: 50%;
+    display: flex;
+    flex-direction: column;/*cambia la direccion de los elementos porque por defecto esta por rows*/
+    gap: 40px; /*The gap property explicitly controls the space between flex items*/
+}
+
+.presentacionTitulo{
+    font-family: var(--fuente-krona);
+    font-size: 2.25rem; /*36px en rem son 2rem = 32px y 4px = 0.25rem (8px = 0.5rem)*/
+}
+
+.presentacionParrafo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.tituloDestacado{
+    color: var(--color-terciario);
+}
+
+.contenedorEnlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.enlacesSubtitulo{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;/*regular*/
+}
+
+.presentacionLink{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;/*semiBold*/
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacionLink:hover{
+    background-color: var(--color-hover);
+    border: 2px solid #fff;
+    color: var(--color-terciario);
+}
+
+.presentacionImagen{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .headerMenu{
+        justify-content: center;
+    }
+
+    .contenedor{
+        /*cuando las clases ya poseen un display flex, no es 
+        necesario ponerlo en las clases que se modifican en media query*/
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacionContenedor{
+        width: auto;/*para que se adapte automaticamente al padre (siempre se adapta al padre)*/
+        /*otra forma era hacer que el width fuera del 100%*/
+    }
+}

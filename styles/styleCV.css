@@ -1,0 +1,219 @@
+body{
+    box-sizing: border-box;
+    color: #000;
+}
+
+.header{
+    background-color: rgb(48, 46, 46);
+    padding: 2% 0 0 15%;
+}
+
+.navbar{
+    display: flex;
+    gap: 80px;
+}
+
+.navbarLink{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 3% 5%;
+}
+
+.seccionesCv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.quienSoy{
+    border: 3px solid orange;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.nombre{
+    font-family: "Krona One", sans-serif;
+    font-size: 2.5rem;
+    color: rgb(48, 46, 46);
+
+}
+
+.carrera{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.datosPersonales{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.subtituloObjetivo{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5625rem;
+    text-align: center;
+    background-color: rgb(73, 72, 72);
+    color: #fff;
+}
+
+.objetivoTexto{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedorFormacionesExperiencia{
+    display: flex;
+    gap: 0 60px;
+}
+
+.formaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subtituloFormaciones{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    border-bottom: 1px solid orange;
+}
+
+.textoFormaciones{
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.formacionesSubSubtitulo{
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.listaContenedor{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+
+.contenedorExperiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subtituloExperiencia{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5625rem;
+    background-color: rgb(73, 72, 72);
+    color: #fff;
+}
+
+.experienciaSubsubtitulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.textoExperiencia{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.textoLenguajes{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.lenguajesProgramacionFrameworks{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.divisionLenguajes{
+    display: flex;
+    gap: 0 12%;
+}
+
+.lenguajesSubsubtitulos{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 3%;
+}
+
+.footer{
+    background-color: rgb(48, 46, 46);
+    padding: 1%;
+    text-align: center;
+    color: #fff;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 1200px){
+    .header{
+        padding: 2%;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .contenedor{
+        padding: 5%;
+    }
+}
+
+@media((min-width: 400px) and (max-width: 800px)){
+    .header{
+        padding: 1%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .nombre{
+        font-size: 2rem;
+    }
+
+    .datosPersonales{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contenedorFormacionesExperiencia{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
