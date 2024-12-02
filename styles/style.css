@@ -101,6 +101,7 @@ body{
 
 .presentacionImagen{
     width: 50%;
+    border-radius: 5%;
 }
 
 .footer{
